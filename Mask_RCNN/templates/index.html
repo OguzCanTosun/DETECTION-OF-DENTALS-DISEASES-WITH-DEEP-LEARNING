@@ -1,0 +1,19 @@
+<html>
+  <center><h1>Yapay Zeka Diş Hastalıkları Tespiti</h1></center>
+  <center><h4>Sizce yapay zeka hangi hastalıklar olduğunu tahmin edebilecek mi?</h4></center>
+  <head>
+    <link rel="stylesheet" href="static/styles/styles.css">
+  </head>
+  <body>
+    <div id="fileupload">
+      <center>
+        <h1>Röntgen Yükleme</h1>
+        {{ dropzone.load_css() }}
+        {{ dropzone.style('border: 2px dashed #0087F7; margin: 5%; min-height: 400px; max-width:600px') }}  
+        {{ dropzone.create('upload_files') }}
+        {{ dropzone.load_js() }}
+        {{ dropzone.config() }}
+      </center>
+    </div>
+  </body>
+</html>
